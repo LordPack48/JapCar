@@ -1,0 +1,331 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.asap-Asap {
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 125;
+}
+
+* {
+    font-family: Asap, Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.logotitle {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+html {
+    overflow-y: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b84949;
+}
+
+
+.fblogo {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    background: rgba(245, 245, 245, 0.767);
+    border-bottom: 2px solid black;
+}
+
+.navbar h1 {
+    font-family: Asap, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #b84949;
+}
+
+.topheader {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8) url("../assets/headerphoto.jpg") center;
+    background-size: cover;
+}
+
+.navbarli {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70vw;
+}
+
+.navbarli li {
+    list-style: none;
+    margin: 20px 10px;
+    transition: 0.5s;
+}
+
+.navbarli li a {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin: 0;
+    padding: 3px;
+}
+
+.navbarli:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+.navbarli li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbarli li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff497c;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.navbarli li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.graybox {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graybox h2 {
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 1vw solid #ff497c;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.001vw;
+    /* Adjust as needed */
+    animation:
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 70vw
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ff497c;
+    }
+}
+.main1{
+    width: 100vw;
+    height: 40vh;
+    background-color: #570e0e;
+    color: white;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    font-family: Asap, Lato, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main1 h1{
+    margin: 0;
+    padding: 0;
+}
+
+.cnt {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 5px solid black;
+}
+
+.hr1{
+    width: 100vw;
+    height: 5px;
+    background-color: black;
+    z-index: 5;
+}
+
+.midcnt{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 40px;
+    z-index: 4;
+    text-align: center;
+}
+
+
+.pht {
+    width: 50vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.pht img {
+    opacity: 20%;
+    width: 50vw;
+}
+
+.txt {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: whitesmoke;
+    font-family: Lato, sans-serif;
+}
+
+.cnt2 {
+    padding: 25px 0;
+    width: 100vw;
+    height: 70vh;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+}
+
+.footerend{
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+    color: gray;
+    margin-top: 40vh;
+    padding: 60px;
+}
+.footerend{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) {
+    .logotitle {
+        font-size: 25px;
+    }
+
+    .graybox h2 {
+        letter-spacing: 0.5vw;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .logotitle {
+        font-size: 30px;
+    }
+
+    .graybox h2 {
+        letter-spacing: 1.8vw;
+        font-size: 32px;
+    }
+
+    .pht {
+        opacity: 100%;
+    }
+
+    .txt {
+        width: 50vw;
+    }
+}
