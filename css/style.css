@@ -48,7 +48,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #b84949;
+    background: #570e0e;
 }
 
 
@@ -74,7 +74,6 @@ body::-webkit-scrollbar-thumb {
     font-family: Asap, sans-serif;
     margin: 0;
     padding: 0;
-    color: #b84949;
 }
 
 .topheader {
@@ -85,70 +84,6 @@ body::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.8) url("../assets/headerphoto.jpg") center;
     background-size: cover;
 }
-
-.navbarli {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 70vw;
-}
-
-.navbarli li {
-    list-style: none;
-    margin: 20px 10px;
-    transition: 0.5s;
-}
-
-.navbarli li a {
-    box-sizing: border-box;
-    display: block;
-    position: relative;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: sans-serif;
-    color: #000000;
-    text-transform: uppercase;
-    transition: 0.5s;
-    margin: 0;
-    padding: 3px;
-}
-
-.navbarli:hover li a {
-    transform: scale(1.5);
-    opacity: 0.2;
-    filter: blur(5px);
-}
-
-.navbarli li a:hover {
-    transform: scale(2);
-    opacity: 1;
-    filter: blur(0);
-    text-decoration: none;
-    color: #000000;
-}
-
-.navbarli li a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ff497c;
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
-    z-index: -1;
-}
-
-.navbarli li a:hover:before {
-    transition: transform 0.5s;
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
 .graybox {
     margin: 0;
     padding: 0;
@@ -160,18 +95,19 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.graybox h2 {
+.graybox h1 {
     color: white;
     z-index: 1;
     overflow: hidden;
+    font-size: 16px;
     /* Ensures the content is not revealed until the animation */
-    border-right: 1vw solid #ff497c;
+    border-right: 1vw solid #570e0e;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.001vw;
+    letter-spacing: 0.1vw;
     /* Adjust as needed */
     animation:
         typing 2.5s steps(40, end),
@@ -186,7 +122,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     to {
-        width: 70vw
+        width: 45vw
     }
 }
 
@@ -199,7 +135,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     50% {
-        border-color: #ff497c;
+        border-color: #570e0e;
     }
 }
 .main1{
@@ -305,9 +241,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 25px;
     }
 
-    .graybox h2 {
-        letter-spacing: 0.5vw;
-        font-size: 30px;
+    .graybox h1 {
+        letter-spacing: 0.1vw;
+        font-size: 24px;
     }
 }
 
@@ -316,9 +252,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 30px;
     }
 
-    .graybox h2 {
-        letter-spacing: 1.8vw;
-        font-size: 32px;
+    .graybox h1 {
+        letter-spacing: 0.5vw;
+        font-size: 36px;
     }
 
     .pht {
